@@ -135,7 +135,7 @@ input::placeholder{
     text-align: center;
     font-size: .6875rem;
     font-weight: 600;
-    margin: .625rem auto 0;
+    margin: -19px auto 0;
     color: var(--White);
 }
 .attribution a { 
@@ -147,6 +147,7 @@ input::placeholder{
         display: flex;
         justify-content: center;
         width: 90rem;
+        margin: 7.5rem 0 1.25rem;
     }
     .content__container{
         width: 43.75rem;
