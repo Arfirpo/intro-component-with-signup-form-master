@@ -32,118 +32,147 @@ body{
     background-image: url(./images/bg-intro-mobile.png);    
 }
 .container{
-    width: 330px;
+    width: 20.625rem;
     margin: 0 auto;
-    margin: 96px auto 40px;
-    /* agregar linear gradient al bgnd */    
+    margin: 6rem auto 2.5rem;   
 }
 .content__container{
     text-align: center;
     color: var(--White);
 }
 .content__title{
-    line-height: 38px;
-    font-size: 27px;
-    margin: -10px auto 16px;
+    line-height: 2.375rem;
+    font-size: 1.6875rem;
+    margin: -0.625rem auto 1rem;
 }
 .content__description{
-    margin: 0 10px 68px;
+    margin: 0 .625rem 4.25rem;
     color: var(--grayishWhite);
 }
 .promotion-container{
     width: 100%;
-    height: 90px;
+    height: 5.625rem;
     background: var(--Blue);
-    border-radius: 10px;
-    margin: 20px auto 25px;
-    padding: 22px 75px;
+    border-radius: .625rem;
+    margin: 1.25rem auto 1.5625rem;
+    padding: 1.375rem 4.6875rem;
     color: var(--White);    
     text-align: center;
     font-weight: 300;
-    box-shadow: 0 7px 0 var(--Blueshadow); 
+    box-shadow: 0 .4375rem 0 var(--Blueshadow); 
 }
 .promotion__text--bold{
     font-weight: 700;
 }
 .registration-container{
-    height: 445px;
-    margin: 20px 0 0;
-    padding: 24px;
-    border-radius: 10px;
+    min-height: 27.8125rem;
+    margin: 1.25rem 0 0;
+    padding: 1.5rem;
+    border-radius: .625rem;
     background: var(--White);
     color: var(--GrayishBlue);
-    box-shadow: 0 8px 0 var(--redshadow);
+    box-shadow: 0 .5rem 0 var(--redshadow);
 }
 input{
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    height: 55px;
-    padding: 24px 0 20px 20px;
-    margin: 2px 0 16px;
-    border: 1px solid var(--GrayishBlue);
-    border-radius: 4px;
-    font-size: 14px;
+    height: 3.4375rem;
+    padding: 1.5rem 0 1.25rem 1.25rem;
+    margin: .125rem 0 1rem;
+    border: .0625rem solid var(--GrayishBlue);
+    border-radius: .25rem;
+    font-size: .875rem;
     font-weight: 600;
     outline: none;
 }
 input::placeholder{
     color: var(--DarkBlue);
 }
-input:hover,
-input:active,
-input:focus{
-    border:solid 1px var(--red);
-}
 .registration__button{
     background: var(--Green);
     color: var(--White);
     border: none;
     width: 100%;
-    height: 56px;
-    border-radius: 5px;
-    font-size: 16px;
+    height: 3.5rem;
+    border-radius: .3125rem;
+    font-size: 1rem;
     font-weight: 300;
-    box-shadow: 0 3px 0 var(--Greenshadow);
+    box-shadow: 0 .1875rem 0 var(--Greenshadow);
     text-transform: uppercase;
     cursor: pointer;
 }
 .registration__button:hover{
     background-color: var(--greenlight) ;
 }
-.registration__error-container{
+.error-img-container{
     position: relative;
 }
-.registration__error-icon-error{
+.registration__error-icon{
     position: absolute;
-    right: 15px;
-    top: -45px;
+    right: .9375rem;
+    top: -2.8125rem;
 }
 .registration__error-message{
     color: var(--red);
     font-style: italic;
     text-align: right;
-    font-size: 12px;
-    margin: -12px 0 18px;
+    font-size: .75rem;
+    margin: -0.75rem 0 1.125rem;
 }
 .form__terms{
     text-align: center;
-    font-size: 11px;
-    margin: 8px 20px 28px;
-    line-height: 20px;
+    font-size: .6875rem;
+    margin: .5rem 1.25rem 1.75rem;
+    line-height: 1.25rem;
 }
 .form__terms--red{
     color: var(--red);
     text-decoration: none;
     font-weight: 700;
 }
-
-
-.attribution { 
-    width: 23.4375rem;
-    font-size: 11px;
+.attribution {
+    width: 23.4375rem; 
     text-align: center;
-    margin: 10px auto 0;
+    font-size: .6875rem;
+    font-weight: 600;
+    margin: .625rem auto 0;
+    color: var(--White);
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 70rem){
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 90rem;
+    }
+    .content__container{
+        width: 43.75rem;
+    }
+    section:first-child{
+        padding-top: 12.5rem;
+    }
+    .content__title{
+        font-size: 3rem;
+        width: 25.875rem;
+        line-height: 3.4375rem;
+        margin-bottom: 1.875rem;
+        margin-left: .5rem;
+    }
+    .content__description{
+        text-align: left;
+        padding-left: .3125rem;
+        margin-right: 12.5rem;
+    }
+    .promotion-container{
+        margin-top: 0;
+        width: 33.875rem;
+        height: 3.75rem;
+    }
+    .attribution{
+        width: 90rem;
+        margin: auto;
+    }
 }
